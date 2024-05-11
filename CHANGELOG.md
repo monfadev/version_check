@@ -1,3 +1,6 @@
+## [0.7.3] - 2024/05/11
+* upgrade packages
+
 ## [0.7.2] - 2024/01/15
 * add optional show dialog
 * fix pass static analysis
