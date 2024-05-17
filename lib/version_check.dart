@@ -34,8 +34,8 @@ class VersionCheck {
   String? packageVersion;
   String? storeVersion;
   String? storeUrl;
-  String? country;
-  bool isDialog;
+  final String? country;
+  final bool? isDialog;
 
   GetStoreVersionAndUrl? getStoreVersionAndUrl;
   ShowUpdateDialog? showUpdateDialog;
@@ -50,6 +50,8 @@ class VersionCheck {
   VersionCheck({
     this.packageName,
     this.packageVersion,
+    this.storeVersion,
+    this.storeUrl,
     this.getStoreVersionAndUrl,
     this.showUpdateDialog,
     this.country,
@@ -86,7 +88,7 @@ class VersionCheck {
       storeVersion = storeVersionAndUrl.storeVersion;
       storeUrl = storeVersionAndUrl.storeUrl;
 
-      if (isDialog) {
+      if (isDialog ?? false) {
         if (hasUpdate) {
           showUpdateDialog ??= _showUpdateDialog;
           // ignore: use_build_context_synchronously
