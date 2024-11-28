@@ -38,7 +38,7 @@ Future<String?> getAndroidStoreVersion(String packageName) async {
       final elements = doc.getElementsByTagName('script');
 
       for (final e in elements) {
-        final match = new RegExp('\"(\\d+\\.\\d+\\.\\d+)\"').firstMatch(e.text);
+        final match = RegExp('"(\\d+\\.\\d+\\.\\d+)"').firstMatch(e.text);
         if (match != null) {
           return match.group(1);
         }
