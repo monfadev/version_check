@@ -1,11 +1,11 @@
 name: version_check
 description: Check iOS/Android/Mac store version and provide update alert if update is available.
-version: 0.7.3
+version: 0.7.4
 #author: ChunKoo Park <mix1009@gmail.com>
 homepage: https://github.com/mix1009/version_check
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.6.0
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,11 +13,11 @@ dependencies:
     sdk: flutter
   html: ^0.15.5
   http: ^1.2.2
-  package_info_plus: ^8.1.1
+  package_info_plus: ^8.1.2
   url_launcher: ^6.3.1
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
